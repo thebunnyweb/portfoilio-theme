@@ -1,0 +1,30 @@
+-var page = ''
+-var bodyClass = ''
+-var pagetitle = ''
+-var sitetitle = ''
+block variables
+doctype html
+html
+  head
+    title SoftIntegrity
+    link(rel="shortcut icon", href="favicon.ico", type="image/vnd.microsoft.icon")
+    meta(http-equiv='Content-Type', content='text/html;charset=utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    meta(name='keywords', content='Mubadala')
+    meta(name='description', content="Mubadala")
+    meta(property="og:image", content="")
+    meta(property="og:title" content="")
+    meta(property="og:url" content="")
+    meta(property="og:site_name" content="")
+    meta(name="format-detection" content="telephone=no")
+
+    include ../includes/_stylelinks
+    block stylelinks
+    block head
+  body
+    #page-wrap
+      block header
+      block body
+      block footer
+    include ../includes/_scriptlinks
+    block foot

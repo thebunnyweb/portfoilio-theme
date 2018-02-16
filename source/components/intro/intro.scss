@@ -1,0 +1,29 @@
+.intro {
+    background: url(../assets/introbg.png) top center no-repeat #fff;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.introcomponent {
+    .introcomponent__nav {}
+    .introcomponent__text {
+        transform: rotate(-90deg);
+        padding: 9% 0;
+        p:first-child {
+            text-transform: uppercase;
+            font-size: 60px;
+            white-space: pre-line;
+            margin-bottom: 0;
+            line-height: 77px;
+            span {
+                display: block;
+                font-size: 130px;
+                font-weight: 900;
+            }
+        }
+        p:last-child {
+            margin-top: 20px;
+            font-size: 25px;
+        }
+    }
+}
