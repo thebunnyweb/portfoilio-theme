@@ -1,0 +1,121 @@
+.process {
+    //background: url(../assets/introbg.png) top center no-repeat #f7f7f7;
+    background: url(../assets/process-bg.svg) no-repeat #fff;
+    min-height: 100vh;
+    background-size: cover;
+    padding-bottom: 20%;
+}
+
+.processwrapper {
+    .processwrapper__text {
+        text-align: center;
+        max-width: 40%;
+        margin: 0 auto;
+        padding-top: 19%;
+        p.small-caption {
+            font-size: 19px;
+            font-weight: 400;
+            color: #fff;
+            text-align: right;
+            padding-right: 16%;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                display: inline-block;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 2px;
+                background: #fff;
+                height: 42px;
+            }
+        }
+        p.big-caption {
+            font-size: 80px;
+            font-weight: 900;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+    .processwrapper__block {
+        position: relative;
+        min-height: 90vh;
+        padding-top: 10%;
+        .graphic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            top: 5%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                border: 7px solid #fff;
+            }
+        }
+        .topbar {
+            max-width: 200px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .leftbar{
+            max-width: 200px;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+            height: 160px;
+            padding-top: 5%;
+        }
+        .rightbar{
+            max-width: 200px;
+            text-align: center;
+            top: 0;
+            bottom: 0;
+            height: 160px;
+            right: 0;
+            position: absolute;
+            margin: auto;
+            padding-top: 5%;
+        }
+        .bottombar{
+            max-width: 200px;
+            text-align: center;
+            bottom: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .topbar svg, .leftbar svg , .rightbar svg, .bottombar svg {
+            fill: #fe6091;
+            width: 34px;
+            height: 34px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .topbar p, .leftbar p, .rightbar p, .bottombar p {
+            color: #b0afb7;
+            font-size: 14px;
+        }
+        >div>p:first-child {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+    }
+}

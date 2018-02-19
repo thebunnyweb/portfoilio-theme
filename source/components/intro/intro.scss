@@ -1,14 +1,16 @@
 .intro {
-    background: url(../assets/introbg.png) top center no-repeat #fff;
+    //background: url(../assets/introbg.png) top center no-repeat #f7f7f7;
+    background: url(../assets/intro-bg.svg) no-repeat #f7f7f7;
     min-height: 100vh;
     background-size: cover;
+    background-position:0 100%; 
 }
 
 .introcomponent {
     .introcomponent__nav {}
     .introcomponent__text {
         transform: rotate(-90deg);
-        padding: 9% 0;
+        padding: 4% 0;
         p:first-child {
             text-transform: uppercase;
             font-size: 60px;
@@ -25,5 +27,43 @@
             margin-top: 20px;
             font-size: 25px;
         }
+    }
+    .introcomponent__icons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        img{
+            position: absolute;
+            border: 0;
+        }
+        img:first-child{
+            transform: rotate(-45deg);
+            top: 45%;
+            width: 14px;
+            left: 29%;
+        }
+        img:nth-of-type(2){
+            transform: rotate(-45deg);
+            top: 47%;
+            width: 14px;
+            left: 28%;
+        }
+        img:last-child{
+            transform: rotate(43deg);
+            top: 30%;
+            width: 40px;
+            left: 69%;            
+        }
+        svg{
+            fill: #fe6091;
+            position: absolute;
+            transform: rotate(43deg);
+            top: 30%;
+            width: 54px;
+            left: 69%;
+        }
+       
     }
 }

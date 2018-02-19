@@ -1,0 +1,165 @@
+.work {
+    background: #ffffff;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 15%;
+    position: relative;
+}
+
+.workwrapper {
+    &__text {
+        text-align: center;
+        max-width: 65%;
+        margin: 0 auto;
+        p.small-caption {
+            font-size: 19px;
+            font-weight: 400;
+            color: #222126;
+            text-align: right;
+            padding-right: 16%;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                display: inline-block;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 2px;
+                background: #222126;
+                height: 42px;
+            }
+        }
+        p.big-caption {
+            font-size: 80px;
+            font-weight: 900;
+            color: #222126;
+            text-transform: uppercase;
+        }
+    }
+    .workitems {
+        display: flex;
+        padding-top: 40px;
+        align-items: center;
+        margin: 80px 0;
+        .info {
+            width: 50%;
+            z-index: 1;
+            p.title {
+                color: #222126;
+                font-size: 32px;
+                text-align: right;
+                font-weight: 700;
+                margin-right: -9%;
+                padding-left: 40%;
+            }
+            p.subtitle {
+                color: #b0afb7;
+                font-size: 14px;
+                margin: 15px;
+                text-align: right;
+                margin-right: -8%;
+                padding-left: 20%;
+            }
+            .action {
+                display: inline-block;
+                color: #fe6091;
+                text-transform: uppercase;
+                font-weight: 900;
+                text-align: -webkit-right;
+                font-size: 18px;
+                text-decoration: none;
+                margin: 40px 20px 0 0;
+                position: relative;
+                float: right;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 3px;
+                    background: #fe6091;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .graphic {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .workitems.right {
+        .info {
+            p.title {
+                text-align: left;
+                margin-left: -9%;
+                margin-right: 0%;
+                padding-right: 40%;
+                padding-left: 0%;
+            }
+            p.subtitle {
+                text-align: left;
+                margin: 0 0 0 -8%;
+                padding: 0 20% 0 0;
+            }
+            .action {
+                float: left;
+                margin: 40px 0px 0 20px;
+            }
+        }
+    }
+    a.load_btn{
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fe6091;
+        font-weight: 700;
+        padding: 10px;
+        border: 2px solid;
+        transition: all .2s ease;
+        &:hover{
+            background: #fe6091;
+            color: #fff;
+        }
+    }
+
+
+    .illustration{
+        position: absolute;
+        top: 35%;
+        right: 0;
+        overflow: hidden;
+        svg.triangle{
+            width: 121px;
+            transform: rotate(110deg);
+            fill: #433a8b;
+        }
+        svg.circle
+        {
+            width: 85px;
+            fill: #fe6091;
+            
+            position: absolute;
+            left: 63%;
+            top: 10%;
+        }
+    }
+
+    .polka{
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        background: url(../assets/icons/polka.svg) right;
+        top: 24%;
+        left: 0;
+    }
+}
